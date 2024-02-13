@@ -1,7 +1,8 @@
 name: 🚀 Deploy Documentation
 
 on:
-  push:
+  # push:
+  workflow_dispach:
 
 jobs:
   deploy:

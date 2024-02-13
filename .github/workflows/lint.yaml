@@ -1,7 +1,8 @@
 name: 🧹 Lint
 
 on:
-  push:
+  # push:
+  workflow_dispach:
 
 jobs:
   lint:
