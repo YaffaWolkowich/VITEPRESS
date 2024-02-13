@@ -1,0 +1,14 @@
+# Rules:
+# https://yamllint.readthedocs.io/en/stable/rules.html
+
+extends: default
+
+rules:
+  document-start: disable
+
+  truthy:
+    check-keys: false
+
+  quoted-strings:
+    quote-type: single
+    required: false

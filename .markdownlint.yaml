@@ -1,0 +1,9 @@
+# Rules:
+# https://github.com/DavidAnson/markdownlint/blob/main/schema/.markdownlint.yaml
+
+MD013:
+  line_length: 120
+
+MD033: # no-inline-html - Inline HTML
+  allowed_elements:
+    - br
