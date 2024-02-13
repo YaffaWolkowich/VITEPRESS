@@ -29,12 +29,12 @@ jobs:
       - name: 🏗 Build
         run: npm run docs:build
 
-      # - name: 🚀 Deploy
-      #   uses: cloudflare/pages-action@1
-      #   if: github.ref == 'refs/heads/main'
-      #   with:
-      #     apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      #     accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      #     projectName: skyvar-knowledge-base
-      #     directory: .vitepress/dist
-      #     gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: 🚀 Deploy
+        uses: cloudflare/pages-action@1
+        if: github.ref == 'refs/heads/main'
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: skyvar-knowledge-base
+          directory: .vitepress/dist
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
